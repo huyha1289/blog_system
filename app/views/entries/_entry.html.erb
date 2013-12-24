@@ -4,8 +4,7 @@
   </span>
   <span class="body"><%= entry.body %></span>
   <span class="timestamp">
-    Posted <%= day_ago_in_words(entry.created_at) %> ago.
-    <%= puts Time.entry.created_at.strftime.to_s %> ago.
+    Posted <%= entry.created_at %> ago.
   </span>
   <% if current_user?(entry.user) %>
     <%= link_to "delete", entry, method: :delete,
