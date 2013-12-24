@@ -5,6 +5,7 @@
   	<%= comment.content %>
   </span>
   <span class="timestamp">
-    <i>Commented <%= time_ago_in_words(comment.created_at) %> ago.</i>
+    <i>Commented <%= day_ago_in_words(comment.created_at) %> ago.</i>
+    <i>Date : comment.create_at.to_s</i>
   </span>
 </li>
